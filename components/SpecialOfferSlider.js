@@ -15,8 +15,7 @@ const offers = [
     originalPrice: 310000,
     description:
       "Low-mileage 2022 example in Arancio Borealis. One of the last naturally aspirated V10 sports cars available.",
-    image:
-      "https://images.unsplash.com/photo-1525609004556-c46c7d6cf023?auto=format&fit=crop&w=1600&q=80",
+    image: "/cars/lamborghini-huracan-evo-2022-2.jpg",
   },
   {
     id: 2,
@@ -27,8 +26,7 @@ const offers = [
     originalPrice: 315000,
     description:
       "2023 Ferrari Roma in Rosso Corsa with Cuoio leather. CPO certified with full factory warranty.",
-    image:
-      "https://images.unsplash.com/photo-1592198084033-aade902d1aae?auto=format&fit=crop&w=1600&q=80",
+    image: "/cars/ferrari-roma-2023-1.jpg",
   },
   {
     id: 3,
@@ -39,8 +37,7 @@ const offers = [
     originalPrice: 245000,
     description:
       "Gentian Blue 2023 with sport exhaust, carbon interior package, and rear axle steering.",
-    image:
-      "https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1600&q=80",
+    image: "/cars/porsche-911-turbo-s-2023-2.jpg",
   },
 ];
 

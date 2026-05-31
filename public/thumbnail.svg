@@ -1,0 +1,356 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <!-- Hero background gradient (warm dark) -->
+    <linearGradient id="heroGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E1408"/>
+      <stop offset="100%" stop-color="#0C0C0C"/>
+    </linearGradient>
+
+    <!-- Hero left-to-right overlay (darkens left for text legibility) -->
+    <linearGradient id="heroOverlayL" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#0C0C0C" stop-opacity="0.92"/>
+      <stop offset="55%"  stop-color="#0C0C0C" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#0C0C0C" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Hero bottom overlay (vignette) -->
+    <linearGradient id="heroOverlayB" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%"   stop-color="#0C0C0C" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#0C0C0C" stop-opacity="0.6"/>
+    </linearGradient>
+
+    <!-- Warm background glow (right side) -->
+    <radialGradient id="warmGlow" cx="85%" cy="33%" r="48%">
+      <stop offset="0%"   stop-color="#2A1C08" stop-opacity="0.48"/>
+      <stop offset="100%" stop-color="#0C0C0C" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Cards section right-edge fade -->
+    <linearGradient id="cardsFade" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="83%" stop-color="#0D0D0D" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#0D0D0D" stop-opacity="1"/>
+    </linearGradient>
+
+    <!-- Clip path: browser card shape -->
+    <clipPath id="browserClip">
+      <rect x="624" y="64" width="516" height="502" rx="10"/>
+    </clipPath>
+  </defs>
+
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!--                BACKGROUND                  -->
+  <!-- ═══════════════════════════════════════════ -->
+
+  <rect width="1200" height="630" fill="#0C0C0C"/>
+  <rect width="1200" height="630" fill="url(#warmGlow)"/>
+
+  <!-- Subtle diagonal accent lines (background texture, right area) -->
+  <g opacity="0.052" stroke="#C8932A" stroke-width="1">
+    <line x1="660"  y1="0" x2="1200" y2="540"/>
+    <line x1="710"  y1="0" x2="1200" y2="490"/>
+    <line x1="760"  y1="0" x2="1200" y2="440"/>
+    <line x1="810"  y1="0" x2="1200" y2="390"/>
+    <line x1="860"  y1="0" x2="1200" y2="340"/>
+    <line x1="910"  y1="0" x2="1200" y2="290"/>
+    <line x1="960"  y1="0" x2="1200" y2="240"/>
+    <line x1="1010" y1="0" x2="1200" y2="190"/>
+    <line x1="1060" y1="0" x2="1200" y2="140"/>
+    <line x1="1110" y1="0" x2="1200" y2="90"/>
+    <line x1="1160" y1="0" x2="1200" y2="40"/>
+  </g>
+
+  <!-- Corner bracket marks -->
+  <g stroke="#C8932A" stroke-width="0.8" opacity="0.42">
+    <line x1="32" y1="32" x2="58" y2="32"/>
+    <line x1="32" y1="32" x2="32" y2="58"/>
+    <line x1="1168" y1="32" x2="1142" y2="32"/>
+    <line x1="1168" y1="32" x2="1168" y2="58"/>
+    <line x1="32" y1="598" x2="58" y2="598"/>
+    <line x1="32" y1="572" x2="32" y2="598"/>
+    <line x1="1168" y1="598" x2="1142" y2="598"/>
+    <line x1="1168" y1="572" x2="1168" y2="598"/>
+  </g>
+
+  <!-- Vertical separator line between panels -->
+  <line x1="600" y1="50" x2="600" y2="580" stroke="#C8932A" stroke-width="0.5" opacity="0.18"/>
+
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!--              LEFT PANEL — BRANDING          -->
+  <!-- ═══════════════════════════════════════════ -->
+
+  <!-- Small label -->
+  <text x="76" y="82"
+    font-family="system-ui,-apple-system,Arial,sans-serif"
+    font-size="9" letter-spacing="5" fill="#C8932A" opacity="0.82">PORTFOLIO PROJECT</text>
+
+  <!-- Accent line under label -->
+  <line x1="76" y1="94" x2="152" y2="94" stroke="#C8932A" stroke-width="0.75" opacity="0.42"/>
+
+  <!-- VELOCE — large display serif -->
+  <text x="66" y="236"
+    font-family="Georgia,'Times New Roman',Times,serif"
+    font-size="134" font-weight="300"
+    fill="#F0EDE8" letter-spacing="-2">VELOCE</text>
+
+  <!-- MOTORS — gold, expanded tracking -->
+  <text x="76" y="295"
+    font-family="Georgia,'Times New Roman',Times,serif"
+    font-size="46"
+    fill="#C8932A" letter-spacing="24">MOTORS</text>
+
+  <!-- Gold rule -->
+  <line x1="76" y1="322" x2="405" y2="322" stroke="#C8932A" stroke-width="0.75"/>
+
+  <!-- Description -->
+  <text x="76" y="356"
+    font-family="system-ui,-apple-system,Arial,sans-serif"
+    font-size="13.5" fill="#9DA3AE" letter-spacing="0.2">Luxury automotive dealership platform</text>
+  <text x="76" y="377"
+    font-family="system-ui,-apple-system,Arial,sans-serif"
+    font-size="13.5" fill="#6B7280" letter-spacing="0.2">Animated UI · Inventory · Contact system</text>
+
+  <!-- Built with label -->
+  <text x="76" y="432"
+    font-family="system-ui,-apple-system,Arial,sans-serif"
+    font-size="9" letter-spacing="4" fill="#2E2E2E">BUILT WITH</text>
+
+  <!-- Tech badge — Next.js -->
+  <rect x="76" y="443" width="84" height="26" rx="3" fill="#131313" stroke="#222222" stroke-width="0.75"/>
+  <text x="118" y="460"
+    font-family="system-ui,-apple-system,Arial,sans-serif"
+    font-size="11" fill="#DEDAD5" text-anchor="middle">Next.js 16</text>
+
+  <!-- Tech badge — React -->
+  <rect x="168" y="443" width="70" height="26" rx="3" fill="#131313" stroke="#222222" stroke-width="0.75"/>
+  <text x="203" y="460"
+    font-family="system-ui,-apple-system,Arial,sans-serif"
+    font-size="11" fill="#DEDAD5" text-anchor="middle">React 19</text>
+
+  <!-- Tech badge — Tailwind -->
+  <rect x="246" y="443" width="96" height="26" rx="3" fill="#131313" stroke="#222222" stroke-width="0.75"/>
+  <text x="294" y="460"
+    font-family="system-ui,-apple-system,Arial,sans-serif"
+    font-size="11" fill="#DEDAD5" text-anchor="middle">Tailwind v4</text>
+
+  <!-- Tech badge — Framer Motion -->
+  <rect x="350" y="443" width="120" height="26" rx="3" fill="#131313" stroke="#222222" stroke-width="0.75"/>
+  <text x="410" y="460"
+    font-family="system-ui,-apple-system,Arial,sans-serif"
+    font-size="11" fill="#DEDAD5" text-anchor="middle">Framer Motion</text>
+
+  <!-- Pages list -->
+  <text x="76" y="502"
+    font-family="system-ui,-apple-system,Arial,sans-serif"
+    font-size="9.5" fill="#262626" letter-spacing="2">HOME · INVENTORY · ABOUT · SERVICES · CONTACT</text>
+
+  <!-- Bottom signature -->
+  <text x="76" y="578"
+    font-family="system-ui,-apple-system,Arial,sans-serif"
+    font-size="9.5" fill="#1E1E1E" letter-spacing="3">VELOCE MOTORS — 2025</text>
+
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!--        RIGHT PANEL — BROWSER MOCKUP         -->
+  <!-- ═══════════════════════════════════════════ -->
+
+  <!-- Drop shadow (simple offset rect) -->
+  <rect x="629" y="72" width="516" height="502" rx="10" fill="#000000" opacity="0.52"/>
+
+  <!-- Browser outer frame -->
+  <rect x="624" y="64" width="516" height="502" rx="10" fill="#111111"/>
+
+  <!-- Browser bar background -->
+  <rect x="624" y="64" width="516" height="36" rx="10" fill="#181818"/>
+  <rect x="624" y="84"  width="516" height="16" fill="#181818"/>
+  <line x1="624" y1="100" x2="1140" y2="100" stroke="#202020" stroke-width="0.75"/>
+
+  <!-- Window buttons -->
+  <circle cx="647" cy="82" r="5.5" fill="#FF5F57"/>
+  <circle cx="664" cy="82" r="5.5" fill="#FFBD2E"/>
+  <circle cx="681" cy="82" r="5.5" fill="#28C840"/>
+
+  <!-- URL bar -->
+  <rect x="726" y="70" width="292" height="24" rx="4" fill="#1B1B1B" stroke="#282828" stroke-width="0.75"/>
+  <text x="872" y="86"
+    font-family="system-ui,-apple-system,Arial,sans-serif"
+    font-size="9.5" fill="#4A4A4A" text-anchor="middle">veloce-motors.vercel.app</text>
+
+
+  <!-- ─── All inner content clipped to browser shape ─── -->
+  <g clip-path="url(#browserClip)">
+
+    <!-- ── HERO SECTION (y 100–332) ── -->
+    <rect x="624" y="100" width="516" height="232" fill="url(#heroGrad)"/>
+
+    <!-- Abstract warm glow suggesting a car shape -->
+    <ellipse cx="1068" cy="198" rx="152" ry="96" fill="#C8932A" opacity="0.062"/>
+    <ellipse cx="1058" cy="204" rx="94" ry="56"  fill="#C8932A" opacity="0.055"/>
+
+    <!-- Hero overlays -->
+    <rect x="624" y="100" width="516" height="232" fill="url(#heroOverlayL)"/>
+    <rect x="624" y="100" width="516" height="232" fill="url(#heroOverlayB)"/>
+
+    <!-- Navbar (overlaid on hero) -->
+    <rect x="624" y="100" width="516" height="31" fill="#0C0C0C" opacity="0.88"/>
+
+    <!-- Nav brand -->
+    <text x="641" y="121"
+      font-family="Georgia,'Times New Roman',serif"
+      font-size="12" letter-spacing="3" fill="#C8932A">VELOCE</text>
+
+    <!-- Nav links as blocks -->
+    <rect x="818" y="114" width="34" height="5" rx="2" fill="#6B7280" opacity="0.32"/>
+    <rect x="860" y="114" width="46" height="5" rx="2" fill="#6B7280" opacity="0.32"/>
+    <rect x="914" y="114" width="28" height="5" rx="2" fill="#6B7280" opacity="0.32"/>
+    <rect x="950" y="114" width="38" height="5" rx="2" fill="#6B7280" opacity="0.32"/>
+
+    <!-- Nav CTA -->
+    <rect x="996" y="110" width="58" height="21" rx="1" fill="#C8932A"/>
+    <text x="1025" y="125"
+      font-family="system-ui,-apple-system,Arial,sans-serif"
+      font-size="8.5" fill="#0C0C0C" text-anchor="middle" font-weight="700">Contact</text>
+
+    <!-- Price badge (top-right of hero) -->
+    <text x="1128" y="148"
+      font-family="system-ui,-apple-system,Arial,sans-serif"
+      font-size="7.5" fill="#6B7280" text-anchor="end" letter-spacing="1">Starting at</text>
+    <text x="1128" y="166"
+      font-family="Georgia,'Times New Roman',serif"
+      font-size="15" fill="#F0EDE8" text-anchor="end">$298,000</text>
+
+    <!-- Hero text content -->
+    <text x="643" y="185"
+      font-family="system-ui,-apple-system,Arial,sans-serif"
+      font-size="7.5" letter-spacing="4" fill="#C8932A">FERRARI</text>
+
+    <!-- Car name as solid blocks (staggered heading mock) -->
+    <rect x="643" y="191" width="152" height="20" rx="2" fill="#F0EDE8" opacity="0.93"/>
+    <rect x="643" y="216" width="112" height="20" rx="2" fill="#F0EDE8" opacity="0.70"/>
+
+    <!-- Tagline text lines -->
+    <rect x="643" y="244" width="118" height="6" rx="2" fill="#9DA3AE" opacity="0.38"/>
+    <rect x="643" y="255" width="90"  height="6" rx="2" fill="#9DA3AE" opacity="0.28"/>
+
+    <!-- CTA button -->
+    <rect x="643" y="269" width="90" height="22" rx="1" fill="#C8932A"/>
+    <text x="688" y="284"
+      font-family="system-ui,-apple-system,Arial,sans-serif"
+      font-size="8" fill="#0C0C0C" text-anchor="middle" letter-spacing="1.5" font-weight="700">VIEW DETAILS</text>
+
+    <!-- Slide counter -->
+    <text x="643" y="321"
+      font-family="system-ui,-apple-system,Arial,sans-serif"
+      font-size="8" fill="#555555" letter-spacing="1">01 / 05</text>
+
+    <!-- Slide indicators -->
+    <rect x="1010" y="317" width="24" height="2" rx="1" fill="#C8932A"/>
+    <rect x="1040" y="317" width="8"  height="2" rx="1" fill="#2A2A2A"/>
+    <rect x="1052" y="317" width="8"  height="2" rx="1" fill="#2A2A2A"/>
+    <rect x="1064" y="317" width="8"  height="2" rx="1" fill="#2A2A2A"/>
+    <rect x="1076" y="317" width="8"  height="2" rx="1" fill="#2A2A2A"/>
+    <!-- Arrow controls -->
+    <rect x="1090" y="311" width="20" height="14" rx="1" fill="none" stroke="#242424" stroke-width="0.75"/>
+    <rect x="1114" y="311" width="20" height="14" rx="1" fill="none" stroke="#242424" stroke-width="0.75"/>
+
+
+    <!-- ── BRAND TABS (y 332–380) ── -->
+    <rect x="624" y="332" width="516" height="48" fill="#0F0F0F"/>
+    <line x1="624" y1="332" x2="1140" y2="332" stroke="#1E1E1E" stroke-width="0.75"/>
+    <line x1="624" y1="380" x2="1140" y2="380" stroke="#1C1C1C" stroke-width="0.75"/>
+
+    <!-- Active tab -->
+    <rect x="641" y="342" width="60" height="20" rx="10" fill="#C8932A"/>
+    <text x="671" y="356.5"
+      font-family="system-ui,-apple-system,Arial,sans-serif"
+      font-size="9" fill="#0C0C0C" text-anchor="middle" font-weight="600">Ferrari</text>
+
+    <!-- Inactive tabs -->
+    <rect x="709" y="342" width="74" height="20" rx="10" fill="#1A1A1A"/>
+    <text x="746" y="356.5"
+      font-family="system-ui,-apple-system,Arial,sans-serif"
+      font-size="9" fill="#6B7280" text-anchor="middle">Lamborghini</text>
+
+    <rect x="791" y="342" width="58" height="20" rx="10" fill="#1A1A1A"/>
+    <text x="820" y="356.5"
+      font-family="system-ui,-apple-system,Arial,sans-serif"
+      font-size="9" fill="#6B7280" text-anchor="middle">Bentley</text>
+
+    <rect x="857" y="342" width="60" height="20" rx="10" fill="#1A1A1A"/>
+    <text x="887" y="356.5"
+      font-family="system-ui,-apple-system,Arial,sans-serif"
+      font-size="9" fill="#6B7280" text-anchor="middle">Porsche</text>
+
+    <rect x="925" y="342" width="62" height="20" rx="10" fill="#1A1A1A"/>
+    <text x="956" y="356.5"
+      font-family="system-ui,-apple-system,Arial,sans-serif"
+      font-size="9" fill="#6B7280" text-anchor="middle">McLaren</text>
+
+
+    <!-- ── SHOWROOM CARDS (y 380–566) ── -->
+    <rect x="624" y="380" width="516" height="186" fill="#0D0D0D"/>
+
+    <!-- Section label -->
+    <text x="641" y="400"
+      font-family="system-ui,-apple-system,Arial,sans-serif"
+      font-size="8" letter-spacing="3" fill="#2E2E2E">OUR SHOWROOM</text>
+
+    <!-- ── Card 1: Ferrari Roma ── -->
+    <rect x="641" y="408" width="150" height="150" rx="4" fill="#131313" stroke="#1E1E1E" stroke-width="0.5"/>
+    <rect x="641" y="408" width="150" height="88" fill="#1B1408"/>
+    <ellipse cx="720" cy="452" rx="62" ry="36" fill="#C8932A" opacity="0.055"/>
+    <text x="653" y="511"
+      font-family="Georgia,'Times New Roman',serif"
+      font-size="10.5" fill="#F0EDE8">Ferrari Roma</text>
+    <text x="653" y="526"
+      font-family="system-ui,-apple-system,Arial,sans-serif"
+      font-size="9.5" fill="#C8932A">$298,000</text>
+    <rect x="653" y="532" width="52" height="4" rx="2" fill="#222222"/>
+    <text x="653" y="547"
+      font-family="system-ui,-apple-system,Arial,sans-serif"
+      font-size="8" fill="#333333">2023 · 1,200 mi</text>
+
+    <!-- ── Card 2: Lamborghini ── -->
+    <rect x="799" y="408" width="150" height="150" rx="4" fill="#131313" stroke="#1E1E1E" stroke-width="0.5"/>
+    <rect x="799" y="408" width="150" height="88" fill="#0B1120"/>
+    <ellipse cx="878" cy="452" rx="62" ry="36" fill="#2855A0" opacity="0.05"/>
+    <text x="811" y="508"
+      font-family="Georgia,'Times New Roman',serif"
+      font-size="10.5" fill="#F0EDE8">Lamborghini</text>
+    <text x="811" y="521"
+      font-family="system-ui,-apple-system,Arial,sans-serif"
+      font-size="8.5" fill="#6B7280">Huracán EVO</text>
+    <text x="811" y="536"
+      font-family="system-ui,-apple-system,Arial,sans-serif"
+      font-size="9.5" fill="#C8932A">$445,000</text>
+    <text x="811" y="550"
+      font-family="system-ui,-apple-system,Arial,sans-serif"
+      font-size="8" fill="#333333">2022 · 800 mi</text>
+
+    <!-- ── Card 3: Bentley (partially faded by gradient) ── -->
+    <rect x="957" y="408" width="150" height="150" rx="4" fill="#131313" stroke="#1E1E1E" stroke-width="0.5"/>
+    <rect x="957" y="408" width="150" height="88" fill="#090E09"/>
+    <ellipse cx="1036" cy="452" rx="62" ry="36" fill="#204020" opacity="0.05"/>
+    <text x="969" y="511"
+      font-family="Georgia,'Times New Roman',serif"
+      font-size="10.5" fill="#F0EDE8">Bentley GT</text>
+    <text x="969" y="526"
+      font-family="system-ui,-apple-system,Arial,sans-serif"
+      font-size="9.5" fill="#C8932A">$289,000</text>
+    <text x="969" y="540"
+      font-family="system-ui,-apple-system,Arial,sans-serif"
+      font-size="8" fill="#333333">2023 · 2,100 mi</text>
+
+    <!-- Right-edge fade (suggests more content off screen) -->
+    <rect x="624" y="380" width="516" height="186" fill="url(#cardsFade)"/>
+
+  </g>
+  <!-- ─── End browser clip ─── -->
+
+  <!-- Browser frame border (drawn on top of content) -->
+  <rect x="624" y="64" width="516" height="502" rx="10" fill="none" stroke="#222222" stroke-width="1"/>
+  <!-- Subtle gold glow on browser edge -->
+  <rect x="624" y="64" width="516" height="502" rx="10" fill="none" stroke="#C8932A" stroke-width="0.5" opacity="0.11"/>
+
+</svg>
